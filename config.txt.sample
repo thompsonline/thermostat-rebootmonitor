@@ -1,0 +1,18 @@
+[logging]
+# Logging:
+# logfile = full path to log file
+# loglevel = info,warn,debug
+logfile = /var/log/reboot
+loglevel = debug
+logrotation = midnight
+logcount = 3
+
+[initialState]
+BucketName = <initialState bucket name>
+BucketKey = <initialState bucket key>
+AccessKey = <initialState access key>
+ProcessName = Reboot
+
+[main]
+# delay = minutes to wait for services to start before trying to log
+delay = 3
