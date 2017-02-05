@@ -51,14 +51,6 @@ sys.stdout = MyLogger(logger, logging.INFO)
 sys.stderr = MyLogger(logger, logging.ERROR)
 
 
-# --------- User Settings --------- Initial State settings
-BUCKET_NAME = "Thermostat" 
-BUCKET_KEY = "thermy"
-ACCESS_KEY = "NMofp4VD8nJqfBUcQaGSWpbzRnA8JIE4" 
-PROCESS_NAME = "Reboot"
-# Set the time to wait until you are sure reboot is complete and network connections are restored (i.e. power outage)
-MINUTES_DELAY = 3
-# ---------------------------------
 def main(argv):
         logger.info('Reboot' + ((': ' + argv[1]) if len(argv) > 1 else ''))
 
