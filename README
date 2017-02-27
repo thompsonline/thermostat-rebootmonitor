@@ -1,0 +1,5 @@
+So the reboot monitor logs when reboots happen, add this to root's cron
+
+sudo crontab -e
+
+@reboot /home/<user>/thermostat-rebootmonitor/monitor_reboot.py
